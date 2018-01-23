@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /*1st element table*/
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+/*2nd element* link/
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+/* 3rd element button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4863A0;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color: #021D5A}
+
+.button:active {
+  background-color: #021D5A;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* 4th element homepage background */
+div.background {
+  background: url(bg.jpg) repeat;
+  /* border: 2px solid black; */
+}
+
+div.transbox {
+   margin: 50px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+/* 5th element image for link(like a button)*/
+img {
+    border: 1px solid #ddd;
+    /*border-radius: 4px;*/
+    padding: 5px;
+    /*width: 150px;*/
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+/* 6th element, all about text boxes */
+input[type=text] {
+    /* width: 230px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; */
+    /* background-color: white;
+    background-position: 10px 10px; */
+    background-repeat: no-repeat;
+    text-align: center;
+    /* padding: 12px 20px 12px 40px; */
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+    background-color: lightblue;
+}
+/* 7th element, touchscreen dropdown basically on hover(ing) */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/* 8th element to center everything */
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+/* hidden section appears on insert */
+#panel, .flip {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    background-color: lightsalmon;
+    color: white;
+    border: solid 1px #a6d8a8;
+    margin: auto;
+}
+
+#panel {
+    display: none;
+}
+</style>
+</head>
+<body>
